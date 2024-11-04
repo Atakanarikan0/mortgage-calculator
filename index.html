@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/calcultor.css">
+<script src="assets/js/calculator.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h4>Mortgage Calculator</h4>
+      <button id="clearBtn">Clear All</button>
+    </div>
+    <form>
+      <div>
+        <label for="">Mortgage Amount</label>
+        <div class="euro-input">
+          <span>€</span>
+          <input type="text" id="amountInput" required>
+        </div>
+        <p id="errorAmount">This field is required</p>
+      </div>
+      <div class="term-and-rate">
+        <div>
+          <label for="">Mortgage Term</label>
+          <div class="euro-input-reverse">
+            <span>years</span>
+            <input type="text" id="termInput" required>
+          </div>
+          <p id="errorTerm">This field is required</p>
+        </div>
+        <div>
+          <label for="">Interest Rate</label>
+          <div class="euro-input-reverse">
+            <span>%</span>
+            <input type="text" id="rateInput" required>
+          </div>
+          <p id="errorRate">This field is required</p>
+        </div>
+      </div>
+      <div>
+        <label for="">Mortgage Type</label>
+        <div class="input-radio">
+          <input type="radio" name="repayment" required>
+          <label for="">Repayment</label>
+        </div>
+        <div class="input-radio">
+          <input type="radio" name="repayment" required>
+          <label for="">Interest Only</label>
+        </div>
+        
+      </div>
+    </form>
+    <button class="calculate-btn" id="calculateBtn"><img src="assets/img/calculator.svg" alt=""> Calculate Repayments</button>
+  
+    </div>
+    <div class="footer">
+      <div class="footer-title">
+        <img src="assets/img/footer-img.png" alt="">
+        <h4>Results shown here</h4>
+        <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+      </div>
+      <div class="footer-inner"> 
+          <h4>Your results</h4>
+          <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
+          <div class="footer-price">
+            <p>Your monthly repayments</p>
+            <h6></h6>
+            <h5>Total you'll repay over the term</h5>
+            <h3></h3>
+          </div>
+      </div>
+    </div>
+</body>
+</html>
